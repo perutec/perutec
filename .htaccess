@@ -1,10 +1,13 @@
-#Options -Indexes
-#<IfModule mod_rewrite.c>
-# Activar RewriteEngine
-#RewriteEngine on
-#RewriteBase /clase05/
-#RewriteCond %{SCRIPT_FILENAME} !-d
-#RewriteCond %{SCRIPT_FILENAME} !-f
+Options -Indexes
+
+
+<IfModule mod_rewrite.c>
+ Activar RewriteEngine
+RewriteEngine on
+RewriteBase /perutec/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
  
-#RewriteRule ^(.*)$ $1.php
-#</IfModule>
+RewriteRule ^(.*)$ $1.php
+
+</IfModule>
