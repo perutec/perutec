@@ -2,7 +2,7 @@ Options -Indexes
 
 
 <IfModule mod_rewrite.c>
- Activar RewriteEngine
+# Activar RewriteEngine
 RewriteEngine on
 RewriteBase /perutec/
 RewriteCond %{SCRIPT_FILENAME} !-d
